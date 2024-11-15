@@ -40,7 +40,7 @@ card.addEventListener("mouseup", () => {
 });
 
 const rainbowCard = document.querySelector('.rainbow-card');
-const colors = ['red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'violet'];
+const colors = ['red', 'orange', 'yellow', 'lime', 'cyan', 'blue', 'violet'];
 
 let currentColorIndex = 0;
 
@@ -53,7 +53,7 @@ function animateRainbow() {
     
     // Плавно переходим к следующему цвету
     setTimeout(() => {
-        rainbowCard.style.transition = 'box-shadow 0.5s ease'; // Плавный переход
+        rainbowCard.style.transition = 'box-shadow 3s ease'; // Плавный переход
         rainbowCard.style.boxShadow = `0 0 0 5px ${colors[nextColorIndex]}`;
         
         // Устанавливаем текущий цвет как следующий

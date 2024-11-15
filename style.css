@@ -15,18 +15,25 @@ body {
 	user-select: none;
 }
 
+h1{
+	position: absolute;
+	top: 3.125rem;
+	color: #fff;
+	font-size: 3rem;
+}
+
 .card-container {
 	display: flex; /* Используем flexbox для выравнивания карточек */
-	gap: 20px; /* Отступ между карточками */
+	gap: 1.25rem; /* Отступ между карточками */
 }
 
 /* Стили для карточек */
 .card {
-	width: 200px;
-	height: 280px;
-	padding: 20px;
+	width: 12.5rem;
+	height: 17.5rem;
+	padding: 1.25rem;
 	color: #ecf0f1;
-	border-radius: 10px;
+	border-radius: 0.625rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -45,11 +52,11 @@ body {
 .rainbow-card::before {
 	content: "";
 	position: absolute;
-	top: -5px; /* Отступ сверху */
-	left: -5px; /* Отступ слева */
-	right: -5px; /* Отступ справа */
-	bottom: -5px; /* Отступ снизу */
-	border-radius: 10px;
+	top: -0.3125rem; /* Отступ сверху */
+	left: -0.3125rem; /* Отступ слева */
+	right: -0.3125rem; /* Отступ справа */
+	bottom: -0.3125rem; /* Отступ снизу */
+	border-radius: 0.625rem;
 	z-index: -1; /* Обводка должна быть под карточкой */
 }
 
@@ -60,12 +67,12 @@ body {
 
 .rainbow-border {
 	position: absolute;
-	top: -5px; /* Отступ сверху для обводки */
-	left: -5px; /* Отступ слева для обводки */
-	right: -5px; /* Отступ справа для обводки */
-	bottom: -5px; /* Отступ снизу для обводки */
+	top: -0.3125rem; /* Отступ сверху для обводки */
+	left: -0.3125rem; /* Отступ слева для обводки */
+	right: -0.3125rem; /* Отступ справа для обводки */
+	bottom: -0.3125rem; /* Отступ снизу для обводки */
 	background: repeating-linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red); /* Радужный градиент */
-	border-radius: 15px; /* Радиус скругления углов обводки */
+	border-radius: 0.9375rem; /* Радиус скругления углов обводки */
 	background-size: 300%;
 	z-index: -1; /* Положение обводки за карточкой */
 	animation: rainbowAnimation 5s linear infinite ; /* Анимация */
